@@ -8,7 +8,7 @@ module.exports = {
  let salt = bcrypt.genSaltSync(10);
  users.push({
     name:  'admin Project',
-    role: 'admin',
+   
     email: 'email@gmail.com',
     password: bcrypt.hashSync("rahasia", salt),
     createdAt: new Date(),
@@ -16,7 +16,7 @@ module.exports = {
   });
   users.push({
     name:  'member Project',
-    role: 'member',
+   
     email: 'member@gmail.com',
     password:  bcrypt.hashSync("rahasia", salt),
     createdAt: new Date(),

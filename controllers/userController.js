@@ -8,7 +8,7 @@ exports.create = (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: bcrypt.hashSync(req.body.password),
-        role: req.body.role ? req.body.role : false,
+       
     };
 
     // proses menyimpan kedalam database
@@ -56,7 +56,7 @@ exports.update = (req, res) => {
         name: req.body.name,
         email: req.body.email,
         password: req.body.password, // Updated password (hashed if present in the request)
-        role: req.body.role ? req.body.role : false,
+        
         // Add other fields as needed
     };
 
